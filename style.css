@@ -41,10 +41,7 @@ h1,h2,h3{
     line-height: 1;
     font-weight: 900;
 }
-header .split{
-    display: flex;
-    flex-direction: column;
-}
+
 .header-main{
     display: flex;
     justify-content: space-between;
@@ -68,11 +65,50 @@ header{
 }
 header .container{
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .header-hero{
     display: flex;
     flex: 1;
     align-items: center;
+}
+.hero-title{
+    font-size: 3rem;
+    color:#F9FAF8;
+    font-weight: bolder;
+    line-height: 1; 
+    margin-block-end: 1rem;
+
+}
+button{
+    background-color: var(--clr-primary-500);
+    border: none;
+    color: var(--clr-primary-200);
+    padding: .5rem 2rem;      
+    border-radius: 5px;
+    font-weight: 600;
+}
+section .sign-up-button{
+    border: 1px solid var(--clr-primary-200);
+    cursor: pointer;
+}
+.sign-up-button:hover{
+    box-shadow: 1px 1px 1px 1px var(--clr-primary-200);
+}
+
+
+.hero-image{
+    aspect-ratio: 2 / 1;
+    background-color: var(--clr-primary-200);
+}
+.hero-wrapper{
+    display: flex;
+    flex-basis: 100%;
+
+}
+.hero-wrapper > *{
+    flex-basis: 100%;
 }
 .info-container .info-image{
     width: 100%;
