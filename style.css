@@ -64,3 +64,17 @@ header{
     background-color: var(--clr-primary-900);
     color: white; /*change this later*/
 }
+.info-container .info-image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: aquamarine;
+    border: 1px solid var(--clr-primary-900);
+}
+.info-wrapper{
+    display: flex;
+    gap: 2rem;
+}
+.section-1{
+    text-align: center;
+    height: 20rem;
+}
