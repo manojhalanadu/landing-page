@@ -48,6 +48,8 @@ header .split{
 .header-main{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
 
 }
 ul{
@@ -56,13 +58,21 @@ ul{
 }
 .container{
     margin-inline: auto;
-    width: min(90%, 40rem);
+    width: min(90%, 60rem);
 
 }
 header{
-    height: 20rem;
+    height: 30rem;
     background-color: var(--clr-primary-900);
     color: white; /*change this later*/
+}
+header .container{
+    height: 100%;
+}
+.header-hero{
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 .info-container .info-image{
     width: 100%;
@@ -73,8 +83,53 @@ header{
 .info-wrapper{
     display: flex;
     gap: 2rem;
+    margin-block-end: 3rem;
 }
 .section-1{
     text-align: center;
-    height: 20rem;
+    
+}
+.random-info-title{
+    margin-block: 2rem;
+}
+section.testimonial{
+    background-color: var(--clr-accent-300);
+}
+.testimonial .container{
+    padding-block: 3rem;
+    padding-inline: 5rem;
+}
+.call-to-action{
+    background-color: #3882F6;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.container-call-to-action{
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    flex:1;
+
+}
+footer{
+    display: flex;
+    background-color: var(--clr-primary-900);
+    color: var(--clr-primary-200);
+    padding: 2rem;
+    justify-content: center;
+}
+.call-to-action > *{
+    flex: 1;
+}
+.quote-content{
+    padding: 3rem 3rem 0;
+}
+.header-logo{
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--clr-primary-200)
 }
